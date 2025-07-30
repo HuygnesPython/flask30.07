@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% block conteudo %}
 <h1>Pagina de agendamento</h1>
-<form action="">
+<form action="{{url_for('agendar')}}" method="post">
     <label for="n">Nome:</label>
     <input type="text" name="n" id="n" placeholder="João">
     <br>
@@ -15,10 +15,11 @@
     <input type="date" name="d" id="d">
     <br>
     <label for="h">Hora:</label>
-    <input type="text" name="h" id="h">
+    <input type="time" name="h" id="h">
     <br>
     <label for="service">Servico</label>
     <select name="select" id="">
+        <option value="">~-Selecione uma-~</option>
         <option value="engenheiro">Engenheiro</option>
         <option value="medico">Médico</option>
         <option value="advogado">Advogado</option>
