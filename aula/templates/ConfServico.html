@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block conteudo %}
+<br>
+{% if dados.nome != '' %}
+<h1>Olá {{dados.nome}}</h1>
+<h2>Seu servico foi agendado para as {{dados.hora}} do dia {{dados.data}}</h2>
+<a href="{{url_for('agendar')}}" style="text-decoration: none;">Voltar</a>
+{% else %}
+
+{% endif %}
+{% endblock %}
