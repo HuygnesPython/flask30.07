@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% block conteudo %}
+<h2>Calcular IMC</h2>
+<form action="imc" method="post">
+
+    <label for="nome">Nome:</label>
+    <input type="text" name="nome" id="nome">
+
+    <br>
+
+    <label for="genero">Gênero:</label>
+
+    <label for="masc">Masculino</label>
+    <input name="genero" id="masc" type="radio" value="Masculino">
+
+    <label for="fem">Feminlino</label>
+    <input name="genero" id="fem" type="radio" value="Feminino">
+
+    <br>
+
+    <label for="alt">Altura:</label>
+    <input type="text" name="alt" id="alt">
+    
+    <br>
+
+    <label for="peso">Peso:</label>
+    <input type="text" name="peso" id="peso">
+    
+    <br>
+
+    <input type="submit" name="" id="" value="Enviar">
+
+</form> 
+{% endblock %}
